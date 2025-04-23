@@ -5,12 +5,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --avatar-size:48px;
+}
+
 .avatar {
-  width:48px;
-  height:48px;
+  width:var(--avatar-size);
+  height:var(--avatar-size);
   border-radius:9999px;
   background-color:#dadada;
   display:inline-flex;
+  background:url('./assets/img_avatar.png');
+  background-size:var(--avatar-size);
 }
 
 .container {
