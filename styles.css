@@ -9,12 +9,17 @@
   --avatar-size:48px;
 }
 
-.avatar {
+.avatar,
+.avatar::after {
   width:var(--avatar-size);
   height:var(--avatar-size);
   border-radius:9999px;
   background-color:#dadada;
   display:inline-flex;
+}
+
+.avatar::after {
+  content: "";
   background:url('./assets/img_avatar.png');
   background-size:var(--avatar-size);
 }
